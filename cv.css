@@ -1,0 +1,215 @@
+body {
+    background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+       background:url("pollok.jpg") no-repeat center center fixed;
+	background-size: cover;
+    }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.grid:before,
+.grid:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.grid:after,
+.row:after {clear: both;}
+
+[class*="col-"]{
+  width: 100%;
+  float: left;
+  min-height: 1px;
+}
+
+
+
+.col {
+  padding: 1em;
+  margin: 8px;
+  color: black;
+  text-align: center;
+}
+
+/*ACCORDION*/
+p.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom:10px;
+}
+
+p.accordion.active, p.accordion:hover {
+    background-color: #ddd;
+}
+
+p.accordion:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+
+p.accordion.active:after {
+    content: "\2796"; 
+}
+
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom:10px;
+}
+
+div.panel.show {
+    opacity: 3;
+    max-height: 130px; 
+    text-align: left;
+    background-color: #abe6cf;
+    color: black;
+    font-family: "Arial";
+    font-size: 13px;
+    /*height: 130px;*/
+}
+@media screen and (max-width: 480px) {
+   div.panel.show {
+    opacity: 1;
+    max-height: 250px; 
+    text-align: left;
+    background-color: #abe6cf;
+    color: black;
+    font-family: "Arial";
+    font-size: 15px;
+    /*height: 250px;*/
+}
+    }
+
+h5 {
+  color: red;
+  font-size: 55px;
+  font-family: "Special Elite";
+  text-shadow: 2px 2px grey;
+}
+p {
+  font-family: "Special Elite";
+  font-size: 16px;
+    
+}
+h4 {
+  color: #abe6cf;
+  font-size: 50px;
+  text-shadow: 2px 2px black;
+}
+#josePicture {
+  margin-top: 60px;
+       
+}
+.image-circle{
+    
+    border-style: solid;
+}
+#basicInfo{
+    font-family: 'Special Elite';
+    
+}
+
+@media screen and (min-width:320px){
+.col-wd-1 {width: 8.33333%;}
+.col-wd-2 {width: 16.66667%;}
+.col-wd-3 {width: 25%;}
+.col-wd-4 {width: 33.33333%;}
+.col-wd-5 {width: 41.66667%;}
+.col-wd-6 {width: 50%;}
+.col-wd-7 {width: 58.33333%;}
+.col-wd-8 {width: 66.66667%;}
+.col-wd-9 {width: 75%;}
+.col-wd-10 {width: 83.33333%;}
+.col-wd-11 {width: 91.66667%;}
+.col-wd-12 {width: 100%;}
+}
+
+@media screen and (min-width:640px){
+.col-md-1 {width: 8.33333%;}
+.col-md-2 {width: 16.66667%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33333%;}
+.col-md-5 {width: 41.66667%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33333%;}
+.col-md-8 {width: 66.66667%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33333%;}
+.col-md-11 {width: 91.66667%;}
+.col-md-12 {width: 100%;}
+}
+
+@media screen and (min-width:960px){
+.col-sm-1 {width: 8.33333%;}
+.col-sm-2 {width: 16.66667%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33333%;}
+.col-sm-5 {width: 41.66667%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33333%;}
+.col-sm-8 {width: 66.66667%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33333%;}
+.col-sm-11 {width: 91.66667%;}
+.col-sm-12 {width: 100%;}
+}
+
+#kyhLogo{
+    margin-top: -70px;
+    
+}
+#social-media-icons {
+	float: right;
+}
+#social-media-icons ul li {
+	display: inline;
+}
+
+#social-media-icons {
+	margin-right: 0px;
+    
+	margin-top: -40px;
+	cursor: pointer;
+}
+	
+
+
+.mailto{
+  display: inline;
+  width:100px;
+  height:20px;
+    color:black;
+     text-decoration: underline;
+}
